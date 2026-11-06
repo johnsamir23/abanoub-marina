@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2b1f19">
+<title>أبانوب & مارينا — دعوة إكليل</title>
+<meta name="description" content="يسعدنا دعوتكم لحضور حفل صلاة إكليل أبانوب ومارينا — الأحد ٢٢ نوفمبر ٢٠٢٦، الساعة ٥ مساءً">
+<!-- غلاف المشاركة: غيّر YOUR-DOMAIN للرابط اللي هترفع عليه الدعوة -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="أبانوب & مارينا — دعوة إكليل">
+<meta property="og:description" content="الأحد ٢٢ نوفمبر ٢٠٢٦ · الساعة ٥ مساءً · كنيسة العذراء والأنبا بيشوي بالكاتدرائية بالعباسية">
+<meta property="og:image" content="https://johnsamir23.github.io/abanoub-marina/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="envelope.jpg">
+<link rel="preload" as="image" href="card.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Gulzar&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --choc:#2b1f19;
+  --ink:#4a3226;
+  --ink-soft:#7a6050;
+  --gold:#9a7334;
+  --gold-hi:#c9a35a;
+  --ease:cubic-bezier(.2,0,0,1);
+  --body:'Amiri','Times New Roman',serif;
+  --ar:'Gulzar','Amiri',serif;
+  --en:'Pinyon Script',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--choc);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+body.locked{overflow:hidden;height:100svh}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+h1,h2,h3{font-weight:400;text-wrap:balance}
+p{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:8px}
+
+.wrap{max-width:480px;margin:0 auto;background:var(--choc)}
+
+/* ============ cards built on the painted paper ============ */
+.card{position:relative;width:100%;aspect-ratio:2/3;background:center/cover no-repeat;container-type:inline-size;overflow:hidden}
+.card.hero{background-image:url(card.jpg)}
+.card.sec{background-image:url(section.jpg)}
+.card + .card{margin-top:-1px}
+.txt{position:absolute;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero .txt{top:5.5%;left:12%;right:12%;height:46%;justify-content:center}
+.sec .txt{top:14%;left:25%;right:25%;height:54%;justify-content:center}
+
+.cross{width:6.4cqw;height:6.4cqw;color:var(--gold);margin-bottom:2cqw}
+.lead{font-size:4.1cqw;line-height:1.7;color:var(--ink-soft)}
+.occasion{font-size:4.6cqw;font-weight:700;letter-spacing:.02em;color:var(--ink);margin-top:.5cqw}
+.names{font-family:var(--ar);font-size:11cqw;line-height:1.45;padding-top:3cqw;color:var(--ink);margin-top:1cqw}
+.names .amp{font-family:var(--body);font-size:7cqw;color:var(--gold);margin:0 2.2cqw;vertical-align:1cqw}
+.en{font-family:var(--en);font-size:6.6cqw;line-height:1;color:var(--gold);margin-top:-1cqw}
+.rule{width:30cqw;height:3cqw;margin:2.2cqw auto;color:var(--gold)}
+.hero .lead{font-size:3.6cqw;line-height:1.5}.hero .rule{margin:1.2cqw auto}.hero .where{line-height:1.55}.hero .where{font-size:3.5cqw}.hero .cross{margin-bottom:1cqw}
+.when{font-size:4.2cqw;line-height:1.7;color:var(--ink)}
+.where{font-size:3.7cqw;line-height:1.7;color:var(--ink-soft)}
+
+.label{font-size:3.4cqw;color:var(--gold);letter-spacing:.02em}
+.title{font-family:var(--ar);font-size:9.4cqw;line-height:1.5;color:var(--ink);padding-top:5.5cqw;margin-bottom:1.5cqw}
+.big{font-size:7cqw;line-height:1.3;color:var(--ink)}
+.small{font-size:3.6cqw;line-height:1.7;color:var(--ink-soft)}
+.verse{font-size:3.9cqw;line-height:1.95;color:var(--ink)}
+.verse small{display:block;font-size:3.2cqw;color:var(--gold);margin-top:.6cqw}
+
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6cqw;width:100%;margin-top:3cqw}
+.count div{padding:1.8cqw 0 1.2cqw;background:rgba(255,251,243,.6);box-shadow:inset 0 0 0 .25cqw rgba(154,115,52,.45)}
+.count b{display:block;font-weight:400;font-size:5.4cqw;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--ink)}
+.count span{display:block;font-size:2.6cqw;color:var(--gold);margin-top:.4cqw}
+
+.btns{display:flex;flex-direction:column;gap:2cqw;width:100%;margin-top:3.4cqw}
+.btn{display:flex;align-items:center;justify-content:center;gap:1.6cqw;min-height:44px;height:10cqw;border-radius:999px;font-size:3.6cqw;text-decoration:none;
+  transition-property:background-color,scale,box-shadow;transition-duration:.18s;transition-timing-function:var(--ease)}
+.btn:active{scale:.96}
+.btn svg{width:4.2cqw;height:4.2cqw;flex:none}
+.btn.solid{background:var(--ink);color:#f6ead6;box-shadow:0 2cqw 4cqw -2.4cqw rgba(43,31,25,.8)}
+.btn.solid:hover{background:#3b281e}
+.btn.line{color:var(--ink);background:rgba(255,251,243,.55);box-shadow:inset 0 0 0 .3cqw rgba(154,115,52,.6)}
+.btn.line:hover{background:rgba(255,251,243,.85)}
+.toast{min-height:5cqw;margin-top:1.4cqw;font-size:3.2cqw;color:var(--gold);opacity:0;transition:opacity .25s}
+.toast.show{opacity:1}
+
+.foot{padding:28px 20px 40px;text-align:center;color:#b89a78;font-size:13px}
+.foot b{display:block;font-weight:400;font-family:var(--en);font-size:34px;color:var(--gold-hi);margin-bottom:6px}
+
+/* entrance for each card's text */
+.txt>*{opacity:0;transform:translateY(8px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.card.in .txt>*{opacity:1;transform:none}
+.card.in .txt>*:nth-child(2){transition-delay:.08s}.card.in .txt>*:nth-child(3){transition-delay:.16s}
+.card.in .txt>*:nth-child(4){transition-delay:.24s}.card.in .txt>*:nth-child(5){transition-delay:.32s}
+.card.in .txt>*:nth-child(6){transition-delay:.4s}.card.in .txt>*:nth-child(7){transition-delay:.48s}
+.card.in .txt>*:nth-child(8){transition-delay:.56s}.card.in .txt>*:nth-child(9){transition-delay:.64s}
+
+/* music */
+.music{position:fixed;left:max(14px,calc(50% - 240px + 14px));bottom:max(16px,env(safe-area-inset-bottom));z-index:30;width:48px;height:48px;border-radius:50%;
+  display:grid;place-items:center;color:#f3e2c4;background:rgba(43,31,25,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  box-shadow:inset 0 0 0 1px rgba(201,163,90,.6),0 8px 20px -8px rgba(0,0,0,.6);opacity:0;pointer-events:none;
+  transition-property:opacity,scale;transition-duration:.3s}
+body.revealed .music{opacity:1;pointer-events:auto}
+.music:active{scale:.96}
+.music svg{width:20px;height:20px;grid-area:1/1;transition-property:opacity,scale,filter;transition-duration:.25s;transition-timing-function:var(--ease)}
+.music .off{opacity:0;scale:.25;filter:blur(4px)}
+.music.muted .on{opacity:0;scale:.25;filter:blur(4px)}
+.music.muted .off{opacity:1;scale:1;filter:none}
+.music .ring{position:absolute;inset:-3px;border-radius:50%;box-shadow:0 0 0 1px rgba(201,163,90,.6);animation:ring 2.4s var(--ease) infinite}
+.music.muted .ring{display:none}
+@keyframes ring{to{transform:scale(1.35);opacity:0}}
+
+/* ============ Envelope intro ============ */
+#intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:radial-gradient(120% 80% at 50% 40%,#3a2a21,#1f1612);
+  transition:opacity .8s var(--ease),visibility 0s linear .8s}
+#intro.gone{opacity:0;visibility:hidden}
+#intro{overflow:hidden}
+.env{position:absolute;top:0;left:50%;transform:translateX(-50%);height:100svh;aspect-ratio:2/3;perspective:1800px}
+.env .inside{position:absolute;inset:0;background:linear-gradient(#1d1410,#3a2a21 55%)}
+.env .card-out{position:absolute;left:7%;right:7%;top:8%;aspect-ratio:2/2.45;background:url(card.jpg) top/100% auto no-repeat;border-radius:2px;
+  box-shadow:0 -10px 30px rgba(0,0,0,.35);transition:transform 1.3s cubic-bezier(.5,0,.2,1)}
+.env .body{position:absolute;inset:0;background:url(envelope.jpg) center/cover;clip-path:polygon(0 25.5%,50% 48%,100% 25.5%,100% 100%,0 100%);z-index:2}
+.env .body:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 24%,rgba(0,0,0,.18) 30%,transparent 48%)}
+.env .flap{position:absolute;inset:0;background:url(envelope.jpg) center/cover;clip-path:polygon(0 0,100% 0,100% 25.5%,50% 48%,0 25.5%);z-index:4;
+  transform-origin:50% 0;transition:transform 1s cubic-bezier(.55,0,.3,1),filter 1s;filter:drop-shadow(0 6px 8px rgba(0,0,0,.4))}
+.env .seal{position:absolute;left:50%;top:52%;width:30%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;z-index:5}
+.env .seal:after{content:"";position:absolute;inset:-6%;border-radius:50%;box-shadow:0 0 0 2px rgba(232,200,130,.7);animation:pulse 2.2s var(--ease) infinite}
+@keyframes pulse{0%{transform:scale(.92);opacity:.9}100%{transform:scale(1.25);opacity:0}}
+.env .hint{position:absolute;left:0;right:0;top:66%;z-index:5;text-align:center;font-size:clamp(15px,4.2vw,18px);color:#ecd9b8;text-shadow:0 1px 6px rgba(0,0,0,.5);transition:opacity .3s}
+.env .to{position:absolute;left:0;right:0;top:9%;z-index:5;text-align:center;color:#d8bf92;transition:opacity .3s}
+.env .to b{display:block;font-weight:400;font-family:var(--en);font-size:clamp(30px,9vw,44px);color:#e6cd98;text-shadow:0 1px 0 rgba(0,0,0,.4)}
+.env .to small{font-size:clamp(13px,3.6vw,16px)}
+#intro.open .flap{transform:rotateX(180deg);filter:drop-shadow(0 -6px 8px rgba(0,0,0,.3)) brightness(.8)}
+#intro.open .seal:after,#intro.open .hint,#intro.open .to{opacity:0;animation:none}
+#intro.open.flipped .flap{z-index:0}
+#intro.open.flipped .card-out{z-index:1}
+#intro.open.rise .card-out{transform:translateY(-52%)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important;transition-delay:0s!important}
+}
+</style>
+</head>
+<body class="locked">
+
+<!-- ============ Envelope ============ -->
+<div id="intro">
+  <div class="env">
+    <div class="inside"></div>
+    <div class="card-out"></div>
+    <div class="body"></div>
+    <div class="flap"></div>
+    <div class="to"><small>دعوة خاصة لحضور حفل صلاة إكليل</small><b>Abanoub &amp; Marina</b></div>
+    <button class="seal" id="seal" aria-label="افتح الدعوة"></button>
+    <div class="hint">اضغط على الختم لفتح الدعوة</div>
+  </div>
+</div>
+
+<button class="music muted" id="music" aria-label="تشغيل الموسيقى" aria-pressed="false">
+  <span class="ring"></span>
+  <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+  <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/><path d="M3 3l18 18"/></svg>
+</button>
+<audio id="song" preload="auto" loop></audio>
+
+<main class="wrap">
+
+  <!-- 1. The invitation -->
+  <section class="card hero" id="home">
+    <div class="txt">
+      <svg class="cross" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M15 3v24M5 12h20M13 3h4M13 27h4M5 10v4M25 10v4"/><circle cx="15" cy="12" r="2.2"/></svg>
+      <p class="lead">بكل الحب والفرح ندعوكم لحضور</p>
+      <p class="occasion">حفل صلاة الإكليل</p>
+      <h1 class="names">أبانوب<span class="amp">&amp;</span>مارينا</h1>
+      <p class="en">Abanoub &amp; Marina</p>
+      <svg class="rule" viewBox="0 0 120 12" aria-hidden="true"><path d="M0 6h46M74 6h46" stroke="currentColor" stroke-width=".8"/><path d="M60 1l5 5-5 5-5-5z" fill="none" stroke="currentColor"/></svg>
+      <p class="when">الأحد ٢٢ نوفمبر ٢٠٢٦ · الساعة ٥ مساءً</p>
+      <p class="where">كنيسة العذراء والأنبا بيشوي<br>بالكاتدرائية بالعباسية</p>
+    </div>
+  </section>
+
+  <!-- 2. Ceremony: when & where -->
+  <section class="card sec" id="place">
+    <div class="txt">
+      <p class="label">الميعاد والمكان</p>
+      <h2 class="title">صلاة الإكليل</h2>
+      <p class="small">الأحد</p>
+      <p class="big">٢٢ نوفمبر ٢٠٢٦</p>
+      <p class="small">الساعة الخامسة مساءً</p>
+      <svg class="rule" viewBox="0 0 120 12" aria-hidden="true"><path d="M0 6h46M74 6h46" stroke="currentColor" stroke-width=".8"/><path d="M60 1l5 5-5 5-5-5z" fill="none" stroke="currentColor"/></svg>
+      <p class="small" style="color:var(--ink)">كنيسة العذراء والأنبا بيشوي<br>بالكاتدرائية بالعباسية</p>
+      <div class="btns">
+        <a class="btn solid" id="mapBtn" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          افتح اللوكيشن</a>
+        <a class="btn line" id="calBtn" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+          أضف للتقويم</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Verse + countdown -->
+  <section class="card sec" id="count">
+    <div class="txt">
+      <svg class="cross" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M15 3v24M5 12h20M13 3h4M13 27h4M5 10v4M25 10v4"/><circle cx="15" cy="12" r="2.2"/></svg>
+      <p class="verse">«إِذًا لَيْسَا بَعْدُ اثْنَيْنِ<br>بَلْ جَسَدًا وَاحِدًا.<br>فَالَّذِي جَمَعَهُ اللهُ<br>لاَ يُفَرِّقُهُ إِنْسَانٌ»<small>متى ١٩ : ٦</small></p>
+      <svg class="rule" viewBox="0 0 120 12" aria-hidden="true"><path d="M0 6h46M74 6h46" stroke="currentColor" stroke-width=".8"/><path d="M60 1l5 5-5 5-5-5z" fill="none" stroke="currentColor"/></svg>
+      <p class="label">باقي على فرحتنا</p>
+      <div class="count" role="timer">
+        <div><b id="cdD">٠</b><span>يوم</span></div>
+        <div><b id="cdH">٠</b><span>ساعة</span></div>
+        <div><b id="cdM">٠</b><span>دقيقة</span></div>
+        <div><b id="cdS">٠</b><span>ثانية</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Share -->
+  <section class="card sec" id="share">
+    <div class="txt">
+      <p class="label">شاركونا الفرحة</p>
+      <h2 class="title">بانتظاركم</h2>
+      <p class="small">حضوركم هو أجمل هدية لينا<br>ابعتوا الدعوة لحبايبكم</p>
+      <div class="btns">
+        <a class="btn solid" id="waShare" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c.3 2.2 2.3 4.4 5 5l1.2-1.2-1.8-.9-.8.8c-.9-.4-1.9-1.4-2.3-2.3l.8-.8-.9-1.8z"/></svg>
+          ابعتها على واتساب</a>
+        <a class="btn line" id="fbShare" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
+          فيسبوك</a>
+        <button class="btn line" id="copyBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+          <span id="copyLbl">نسخ الرابط</span></button>
+      </div>
+      <p class="toast" id="toast" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="foot"><b>A &amp; M</b>دعوة رقمية من Marketing Pixel</div>
+</main>
+
+<script>
+/* ============== بيانات الدعوة ============== */
+const INVITE = {
+  date: "2026-11-22T17:00:00+02:00",
+  hours: 2,
+  title: "حفل صلاة إكليل أبانوب ومارينا",
+  place: "كنيسة العذراء والأنبا بيشوي - الكاتدرائية بالعباسية",
+  map: "https://maps.app.goo.gl/h4pBeQhnpDg4Ke3WA",
+  song: "song.mp3",   // حط ملف الأغنية جنب الملف ده بنفس الاسم
+  shareText: "يسعدنا دعوتكم لحضور حفل صلاة إكليل أبانوب ومارينا 🤍\nالأحد ٢٢ نوفمبر ٢٠٢٦ الساعة ٥ مساءً"
+};
+/* ========================================== */
+const $ = id => document.getElementById(id);
+const ar = n => Number(n).toLocaleString("ar-EG",{useGrouping:false});
+const pageUrl = location.href.split("#")[0];
+const when = new Date(INVITE.date);
+const iso = d => d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+
+$("mapBtn").href = INVITE.map;
+$("calBtn").href = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent(INVITE.title)
+  + "&dates=" + iso(when) + "/" + iso(new Date(+when + INVITE.hours*36e5)) + "&location=" + encodeURIComponent(INVITE.place);
+$("waShare").href = "https://wa.me/?text=" + encodeURIComponent(INVITE.shareText + "\n" + pageUrl);
+$("fbShare").href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(pageUrl);
+
+(function tick(){
+  let s = Math.max(0, Math.floor((when - Date.now())/1000));
+  $("cdD").textContent = ar(Math.floor(s/86400)); s%=86400;
+  $("cdH").textContent = ar(Math.floor(s/3600)); s%=3600;
+  $("cdM").textContent = ar(Math.floor(s/60)); $("cdS").textContent = ar(s%60);
+  setTimeout(tick,1000);
+})();
+
+function toast(t){ const el=$("toast"); el.textContent=t; el.classList.add("show"); clearTimeout(el._t); el._t=setTimeout(()=>el.classList.remove("show"),2400); }
+if (navigator.share) $("copyLbl").textContent = "مشاركة";
+$("copyBtn").addEventListener("click", async () => {
+  try{ if(navigator.share){ await navigator.share({title:document.title,text:INVITE.shareText,url:pageUrl}); return; }
+       await navigator.clipboard.writeText(pageUrl); $("copyLbl").textContent="اتنسخ"; toast("الرابط اتنسخ، ابعته لمين ما تحب");
+       setTimeout(()=>$("copyLbl").textContent="نسخ الرابط",2000); }
+  catch(e){ if(e && e.name!=="AbortError") toast(pageUrl); }
+});
+
+/* reveal each card's text as it scrolls in */
+const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.3});
+function watch(){ document.querySelectorAll(".card").forEach(c => io.observe(c)); }
+
+/* music: the song file, or a soft music box if it's missing */
+const song = $("song"); song.src = INVITE.song;
+let playing=false, box=false, ctx, master, loop;
+const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5,493.88,587.33,783.99,587.33];
+function pluck(fq,t){ const o=ctx.createOscillator(),g=ctx.createGain(); o.type="sine"; o.frequency.value=fq;
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(.2,t+.01); g.gain.exponentialRampToValueAtTime(.0001,t+1.6);
+  o.connect(g).connect(master); o.start(t); o.stop(t+1.7); }
+function boxStart(){ try{ ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();
+  if(!master){ master=ctx.createGain(); master.gain.value=.45; master.connect(ctx.destination); }
+  ctx.resume(); let i=0,next=ctx.currentTime+.05; clearInterval(loop);
+  loop=setInterval(()=>{ while(next<ctx.currentTime+.4){ pluck(notes[i%notes.length],next); next+=.45; i++; } },120);
+  box=true; playing=true; ui(); }catch(e){} }
+function play(){ const p=song.play(); if(p&&p.then) p.then(()=>{playing=true;box=false;ui();}).catch(boxStart); else boxStart(); }
+function pause(){ song.pause(); clearInterval(loop); playing=false; ui(); }
+function ui(){ const b=$("music"); b.classList.toggle("muted",!playing); b.setAttribute("aria-pressed",playing); b.setAttribute("aria-label",playing?"إيقاف الموسيقى":"تشغيل الموسيقى"); }
+$("music").addEventListener("click",()=> playing ? pause() : (box ? boxStart() : play()));
+
+/* open the envelope: flap lifts, card slides out, then the invitation */
+$("seal").addEventListener("click", () => {
+  const it = $("intro"); if (it.classList.contains("open")) return;
+  it.classList.add("open"); play();
+  setTimeout(()=> it.classList.add("flipped"), 500);
+  setTimeout(()=> it.classList.add("rise"), 900);
+  setTimeout(()=>{ it.classList.add("gone"); document.body.classList.remove("locked"); document.body.classList.add("revealed"); watch(); }, 2500);
+});
+</script>
+</body>
+</html>
