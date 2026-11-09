@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#2b1f19">
+<meta name="theme-color" content="#e6d9c6">
 <title>أبانوب & مارينا — دعوة إكليل</title>
 <meta name="description" content="يسعدنا دعوتكم لحضور حفل صلاة إكليل أبانوب ومارينا — الأحد ٢٢ نوفمبر ٢٠٢٦، الساعة ٥ مساءً">
 <!-- غلاف المشاركة: غيّر YOUR-DOMAIN للرابط اللي هترفع عليه الدعوة -->
@@ -49,7 +49,7 @@ p{text-wrap:pretty}
 .card.sec{background-image:url(section.jpg)}
 .card + .card{margin-top:-1px}
 .txt{position:absolute;display:flex;flex-direction:column;align-items:center;text-align:center}
-.hero .txt{top:5.5%;left:12%;right:12%;height:46%;justify-content:center}
+.hero .txt{top:9%;left:12%;right:12%;height:38%;justify-content:center}
 .sec .txt{top:14%;left:25%;right:25%;height:54%;justify-content:center}
 
 .cross{width:6.4cqw;height:6.4cqw;color:var(--gold);margin-bottom:2cqw}
@@ -114,22 +114,22 @@ body.revealed .music{opacity:1;pointer-events:auto}
 @keyframes ring{to{transform:scale(1.35);opacity:0}}
 
 /* ============ Envelope intro ============ */
-#intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:radial-gradient(120% 80% at 50% 40%,#3a2a21,#1f1612);
+#intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:radial-gradient(120% 80% at 50% 40%,#efe5d6,#d9c9b2);
   transition:opacity .8s var(--ease),visibility 0s linear .8s}
 #intro.gone{opacity:0;visibility:hidden}
 #intro{overflow:hidden}
 .env{position:absolute;top:0;left:50%;transform:translateX(-50%);height:100svh;aspect-ratio:2/3;perspective:1800px}
-.env .inside{position:absolute;inset:0;background:linear-gradient(#1d1410,#3a2a21 55%)}
+.env .inside{position:absolute;inset:0;background:linear-gradient(#b9a68c,#d8c8b0 55%)}
 .env .card-out{position:absolute;left:7%;right:7%;top:8%;aspect-ratio:2/2.45;background:url(card.jpg) top/100% auto no-repeat;border-radius:2px;
   box-shadow:0 -10px 30px rgba(0,0,0,.35);transition:transform 1.3s cubic-bezier(.5,0,.2,1)}
 .env .body{position:absolute;inset:0;background:url(envelope.jpg) center/cover;clip-path:polygon(0 25.5%,50% 48%,100% 25.5%,100% 100%,0 100%);z-index:2}
-.env .body:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 24%,rgba(0,0,0,.18) 30%,transparent 48%)}
+.env .body:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 24%,rgba(90,70,45,.12) 30%,transparent 48%)}
 .env .flap{position:absolute;inset:0;background:url(envelope.jpg) center/cover;clip-path:polygon(0 0,100% 0,100% 25.5%,50% 48%,0 25.5%);z-index:4;
-  transform-origin:50% 0;transition:transform 1s cubic-bezier(.55,0,.3,1),filter 1s;filter:drop-shadow(0 6px 8px rgba(0,0,0,.4))}
+  transform-origin:50% 0;transition:transform 1s cubic-bezier(.55,0,.3,1),filter 1s;filter:drop-shadow(0 6px 8px rgba(90,70,45,.25))}
 .env .seal{position:absolute;left:50%;top:52%;width:30%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;z-index:5}
-.env .seal:after{content:"";position:absolute;inset:-6%;border-radius:50%;box-shadow:0 0 0 2px rgba(232,200,130,.7);animation:pulse 2.2s var(--ease) infinite}
+.env .seal:after{content:"";position:absolute;inset:-6%;border-radius:50%;box-shadow:0 0 0 2px rgba(176,135,60,.7);animation:pulse 2.2s var(--ease) infinite}
 @keyframes pulse{0%{transform:scale(.92);opacity:.9}100%{transform:scale(1.25);opacity:0}}
-.env .hint{position:absolute;left:0;right:0;top:66%;z-index:5;text-align:center;font-size:clamp(15px,4.2vw,18px);color:#ecd9b8;text-shadow:0 1px 6px rgba(0,0,0,.5);transition:opacity .3s}
+.env .hint{position:absolute;left:0;right:0;top:66%;z-index:5;text-align:center;font-size:clamp(15px,4.2vw,18px);color:#6b5240;text-shadow:0 1px 0 rgba(255,255,255,.6);transition:opacity .3s}
 .env .to{position:absolute;left:0;right:0;top:9%;z-index:5;text-align:center;color:#d8bf92;transition:opacity .3s}
 .env .to b{display:block;font-weight:400;font-family:var(--en);font-size:clamp(30px,9vw,44px);color:#e6cd98;text-shadow:0 1px 0 rgba(0,0,0,.4)}
 .env .to small{font-size:clamp(13px,3.6vw,16px)}
@@ -175,9 +175,6 @@ body.revealed .music{opacity:1;pointer-events:auto}
       <p class="occasion">حفل صلاة الإكليل</p>
       <h1 class="names">أبانوب<span class="amp">&amp;</span>مارينا</h1>
       <p class="en">Abanoub &amp; Marina</p>
-      <svg class="rule" viewBox="0 0 120 12" aria-hidden="true"><path d="M0 6h46M74 6h46" stroke="currentColor" stroke-width=".8"/><path d="M60 1l5 5-5 5-5-5z" fill="none" stroke="currentColor"/></svg>
-      <p class="when">الأحد ٢٢ نوفمبر ٢٠٢٦ · الساعة ٥ مساءً</p>
-      <p class="where">كنيسة العذراء والأنبا بيشوي<br>بالكاتدرائية بالعباسية</p>
     </div>
   </section>
 
